@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container max-w-4xl ml-24 pb-5">
+    <section class="header pt-5 pb-10">
+      <div class="header-top flex justify-between pb-10">
+        <div>
+          <h2 class="text-lg font-bold bold">Dashboard</h2>
+        </div>
+        <form>
+          <input type="text"
+            class="w-96 h-8 py-auto pl-8 pr-4 text-gray-700 bg-gray-100 border rounded-xl dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring "
+            placeholder="Search property,thems,and etc.">
+          <svg width="20" height="20" fill="currentColor" class="absolute top-7 ml-2 text-gray-500" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+          </svg>
+        </form>
+      </div>
+      <div class="header-bottom flex">
+        <img class="w-14 h-14 rounded-full" src="/img/gatto.jpg" alt="myImage">
+        <div class="px-3">
+          <h2 class="font-bold text-lg">Hi, Maurice</h2>
+          <p class="mt-1 text-xs font-medium text-gray-500">Here's your activity today, take a moment to have look at
+            this.</p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="accounting w-full h-96 shadow p-6 mb-4 border-solid border-2 border-x-gray-400 rounded-lg divide-y divide-solid">
+      <div class="top flex justify-between h-3/4 ">
+        <div class="text">
+          <h3 class="text-lg font-bold bold">Accounting</h3>
+          <p class="mt-1 pb-8 text-md font-medium text-gray-600">March 1, 2020 - April 31,2021</p>
+          <h4 class="text-md pb-2">AVG.moutly income</h3>
+            <h1 class="text-3xl font-extrabold pb-5">$5478.56</h1>
+            <span class="text-xs font-medium text-green-600">↗ 3.89%</span>
+            <spna class="text-xs font-medium text-gray-500">vs5.432.45$ prev 90 days</span>
+        </div>
+        <div class="grafik w-1/2 h-48 grid grid-cols-6 justify-around content-end text-gray-600"> 
+          <div class="">
+            <p class="w-12 h-16 rounded-t-full bg-blue-200"></p>
+            <span class="pl-2">Nov</span>
+          </div>
+          <div>
+            <p class="w-12 h-16 rounded-t-full bg-blue-200 "></p>
+            <span class="pl-2">Dec</span>
+          </div>
+          <div>
+            <p class="w-12 h-16 rounded-t-full bg-blue-200 "></p>
+            <span class="pl-2">Jan</span>
+          </div>
+          <div>
+            <p class="w-12 h-16 rounded-t-full bg-blue-200 "></p>
+            <span class="pl-2">Feb</span>
+          </div>
+          <div>
+            <p class="w-12 h-16  rounded-t-full bg-blue-500 "></p>
+            <span class="pl-2">Mar</span>
+          </div>
+          <div>
+            <p class="w-12 h-16 rounded-t-full bg-blue-200 "></p>
+            <span class="pl-3">Apr</span>
+          </div>
+          
+        </div>
+      </div>
+      <div class="bottom h-24 py-6 flex justify-start align-center">
+        <div class="green w-1/2 flex justify-start align-center ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-green-400 h-12 w-12 mr-4 rounded-full shadow" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <div>
+            <h2 class="text-2xl font-bold">$89,240.38</h2>
+            <p class="text-xs font-medium text-gray-600">Total income</p>
+          </div>
+        </div>
+        <div class="red flex justify-center align-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-red-600 h-12 w-12 mr-4 rounded-full shadow" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <div>
+            <h2 class="text-2xl font-bold">$16,237.82</h2>
+            <p class="text-xs font-medium text-gray-600">Total Expreses</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="grid grid-cols-2 gap-6 w-full pt-2">
+      <section class="task-summay p-6 shadow border-solid border-2 border-x-gray-400 rounded-lg">
+        <h3 class="text-xl font-bold pb-4">Task Summary</h3>
+        <div class="cubs grid grid-cols-3 gap-4">
+          <div class="h-28 rounded-lg bg-red-400 ">
+            <p class="text-sm font-medium pt-2 pl-3 text-white">New</p>
+            <div class="flex justify-between mt-8 ml-3">
+              <h2 class="text-white text-3xl font-bold">3</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white opacity-20 h-12 w-12" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+          <div class="h-28 rounded-lg bg-blue-700 ">
+            <p class="text-sm font-medium pt-2 pl-3 text-white">Asigned</p>
+            <div class="flex justify-between mt-8 ml-3">
+              <h2 class="text-white text-3xl font-bold">16</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white opacity-20 h-12 w-12 overflow-hidden "
+                viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+          <div class="h-28 rounded-lg bg-green-400 ">
+            <p class="text-sm font-medium pt-2 pl-3 text-white">Closed</p>
+            <div class="mt-8 ml-3 flex">
+              <h2 class="text-white text-3xl font-bold mr-8">36</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white opacity-20 h-12 w-12" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+
+            </div>
+          </div>
+        </div>
+        <p class="py-6 text-sm font-medium text-gray-500">Out-time competion Rate</p>
+        <span class="text-2xl font-extrabold">98%</span><span class="text-sm text-green-600">↗ 2.73%</span>
+      </section>
+      <section class="properties p-6 shadow border-solid border-2 border-x-gray-400 rounded-lg">
+        <div class="flex justify-between align-center pb-8">
+          <h3 class="text-xl font-bold ">Properties</h3>
+          <a class="text-blue-600 font-medium" href="#">All Properties ></a>
+        </div>
+        <div class="properties-items flex flex-row align-center">
+          <div class="items-left basis-1/2">
+            <div class="item-blue pb-3 flex">
+              <div>
+                <p class="bg-blue-600 h-3 w-3 rounded-sm mr-4 mt-2"></p>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold">298</h4>
+                <span class="text-sm font-medium text-gray-500">Ocupied</span><span
+                  class="text-sm font-medium text-gray-400 pl-1">48%</span>
+              </div>
+            </div>
+            <div class="item-gray pb-3 flex">
+              <div>
+                <p class="bg-green-400 h-3 w-3 rounded-sm mr-4 mt-2"></p>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold">249</h4>
+                <span class="text-sm font-medium text-gray-500">Vacnat</span><span
+                  class="text-sm font-medium text-gray-400 pl-1">39%</span>
+              </div>
+            </div>
+            <div class="item-orange flex flex-row">
+              <div>
+                <p class="bg-red-400 h-3 w-3 rounded-sm mr-4 mt-2"></p>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold">85</h4>
+                <span class="text-sm font-medium text-gray-500">Maintenance</span><span class="text-sm font-medium text-gray-400 pl-1">13%</span>
+              </div>
+            </div>
+          </div>
+          <div class="items-right bg-primary basis-1/2 flex-col justify-center align-center pl-20 ">
+            <div class="flex flex-col gap-6">
+              <p class="bg-blue-600 h-3 w-18 rounded-sm "></p>
+              <p class="bg-green-400 h-3 w-16 rounded-sm "></p>
+              <p class="bg-red-400 h-3 w-6 rounded-sm "></p>
+            </div>
+            <div class="pl-6 pt-4">
+            <h2 class="text-3xl font-semibold">632</h2>
+            <p class="text-sm font-medium text-gray-500">Total units</p>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
