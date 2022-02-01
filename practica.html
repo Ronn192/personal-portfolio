@@ -12,14 +12,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
-<body>
-  <div class="container max-w-4xl ml-24 pb-5">
-    <section class="header pt-5 pb-10">
-      <div class="header-top flex justify-between pb-10">
-        <div>
-          <h2 class="text-lg font-bold bold">Dashboard</h2>
+<body class="m-0 p-0 bg-gray-100">
+  <div class="m-0 p-0 lg:max-w-4xl ">
+    <section class="header h-20 p-3 flex justify-between items-center">
+      <div class="header-top flex justify-between ">
+        <div class="flex gap-1 justify-between items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+          <h2 class="text-lg text-gray-800 font-bold ml-2">Dashboard</h2>
         </div>
-        <form>
+        <form class="hidden lg:block">
           <input type="text"
             class="w-96 h-8 py-auto pl-8 pr-4 text-gray-700 bg-gray-100 border rounded-xl dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring "
             placeholder="Search property,thems,and etc.">
@@ -30,55 +34,43 @@
         </form>
       </div>
       <div class="header-bottom flex">
-        <img class="w-14 h-14 rounded-full" src="/img/gatto.jpg" alt="myImage">
-        <div class="px-3">
+        <img class="w-10 h-10 shadow-2xl rounded-full p-2 bg-white" src="img/bell.png" alt="">
+        <img class="w-10 h-10 shadow-2xl border-2 rounded-full ml-2 p-0.5 bg-white" src="/img/gatto.jpg" alt="myImage">
+        <div class="hidden lg:block px-3">
           <h2 class="font-bold text-lg">Hi, Maurice</h2>
           <p class="mt-1 text-xs font-medium text-gray-500">Here's your activity today, take a moment to have look at
             this.</p>
         </div>
       </div>
     </section>
-    <section
-      class="accounting w-full h-96 shadow p-6 mb-4 border-solid border-2 border-x-gray-400 rounded-lg divide-y divide-solid">
-      <div class="top flex justify-between h-3/4 ">
+    <section class="accounting bg-white  shadow p-6 mb-4 border-x-gray-400 rounded-t-2xl">
+      <div class="top flex justify-between ">
         <div class="text">
-          <h3 class="text-lg font-bold bold">Accounting</h3>
-          <p class="mt-1 pb-8 text-md font-medium text-gray-600">March 1, 2020 - April 31,2021</p>
-          <h4 class="text-md pb-2">AVG.moutly income</h3>
-            <h1 class="text-3xl font-extrabold pb-5">$5478.56</h1>
-            <span class="text-xs font-medium text-green-600">↗ 3.89%</span>
-            <spna class="text-xs font-medium text-gray-500">vs5.432.45$ prev 90 days</span>
-        </div>
-        <div class="grafik w-1/2 h-48 grid grid-cols-6 justify-around content-end text-gray-600"> 
-          <div class="">
-            <p class="w-12 h-16 rounded-t-full bg-blue-200"></p>
-            <span class="pl-2">Nov</span>
+          <div class="flex justify-between">
+            <h3 class="text-lg font-bold bold">Accounting</h3>
+            <div class="flex justify-between items-center">
+              <span class="text-sm font-medium text-gray-600">This Mounth </span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-600 h-5 w-5 pl-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <p class="w-12 h-16 rounded-t-full bg-blue-200 "></p>
-            <span class="pl-2">Dec</span>
+          <p class="mt-1 pb-5 text-sm font-medium text-gray-600">March 1, 2020 - April 31,2021</p>
+          <hr class="solid">
+          <div class="pb-4">
+            <h4 class="text-sm font-semibold pb-2 pt-5">AVG.Moutly income</h3>
+              <h1 class="text-4xl font-bold pb-2">$5,849.36</h1>
+              <span class="text-xs font-medium text-green-600"> ↗ 3.89%</span>
+              <spna class="text-xs font-bold text-gray-500">vs 5.432.45$</spna> <span
+                class="text-xs font-medium text-gray-500"> prev 90 days</span>
+              <img class="pt-1" src="/img/grafic1.png" alt="">
           </div>
-          <div>
-            <p class="w-12 h-16 rounded-t-full bg-blue-200 "></p>
-            <span class="pl-2">Jan</span>
-          </div>
-          <div>
-            <p class="w-12 h-16 rounded-t-full bg-blue-200 "></p>
-            <span class="pl-2">Feb</span>
-          </div>
-          <div>
-            <p class="w-12 h-16  rounded-t-full bg-blue-500 "></p>
-            <span class="pl-2">Mar</span>
-          </div>
-          <div>
-            <p class="w-12 h-16 rounded-t-full bg-blue-200 "></p>
-            <span class="pl-3">Apr</span>
-          </div>
-          
         </div>
       </div>
-      <div class="bottom h-24 py-6 flex justify-start align-center">
-        <div class="green w-1/2 flex justify-start align-center ">
+      <hr class="solid">
+      <div class="bottom block h-36 items-start pt-4">
+        <div class="green h-1/2 flex justify-start align-center ">
           <svg xmlns="http://www.w3.org/2000/svg" class="text-green-400 h-12 w-12 mr-4 rounded-full shadow" fill="none"
             viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -89,8 +81,8 @@
             <p class="text-xs font-medium text-gray-600">Total income</p>
           </div>
         </div>
-        <div class="red flex justify-center align-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="text-red-600 h-12 w-12 mr-4 rounded-full shadow" fill="none"
+        <div class="red flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-red-600 h-12 w-12 mr-4 rounded-full shadow-lg" fill="none"
             viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -102,7 +94,7 @@
         </div>
       </div>
     </section>
-    <div class="grid grid-cols-2 gap-6 w-full pt-2">
+    <div class=" lg:grid grid-cols-2 gap-6 w-full pt-2">
       <section class="task-summay p-6 shadow border-solid border-2 border-x-gray-400 rounded-lg">
         <h3 class="text-xl font-bold pb-4">Task Summary</h3>
         <div class="cubs grid grid-cols-3 gap-4">
@@ -180,7 +172,8 @@
               </div>
               <div>
                 <h4 class="text-lg font-bold">85</h4>
-                <span class="text-sm font-medium text-gray-500">Maintenance</span><span class="text-sm font-medium text-gray-400 pl-1">13%</span>
+                <span class="text-sm font-medium text-gray-500">Maintenance</span><span
+                  class="text-sm font-medium text-gray-400 pl-1">13%</span>
               </div>
             </div>
           </div>
@@ -191,9 +184,9 @@
               <p class="bg-red-400 h-3 w-6 rounded-sm "></p>
             </div>
             <div class="pl-6 pt-4">
-            <h2 class="text-3xl font-semibold">632</h2>
-            <p class="text-sm font-medium text-gray-500">Total units</p>
-          </div>
+              <h2 class="text-3xl font-semibold">632</h2>
+              <p class="text-sm font-medium text-gray-500">Total units</p>
+            </div>
           </div>
         </div>
       </section>
