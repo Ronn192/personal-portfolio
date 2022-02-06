@@ -94,11 +94,11 @@
         </div>
       </div>
     </section>
-    <div class=" lg:grid grid-cols-2 gap-6 w-full pt-2">
+    <div class=" bg-white lg:grid grid-cols-2 gap-6 w-full pt-2">
       <section class="task-summay p-6 shadow border-solid border-2 border-x-gray-400 rounded-lg">
         <h3 class="text-xl font-bold pb-4">Task Summary</h3>
         <div class="cubs grid grid-cols-3 gap-4">
-          <div class="h-28 rounded-lg bg-red-400 ">
+          <div class="h-24 rounded-lg bg-red-400 ">
             <p class="text-sm font-medium pt-2 pl-3 text-white">New</p>
             <div class="flex justify-between mt-8 ml-3">
               <h2 class="text-white text-3xl font-bold">3</h2>
@@ -110,7 +110,7 @@
               </svg>
             </div>
           </div>
-          <div class="h-28 rounded-lg bg-blue-700 ">
+          <div class="h-24 rounded-lg bg-blue-700 ">
             <p class="text-sm font-medium pt-2 pl-3 text-white">Asigned</p>
             <div class="flex justify-between mt-8 ml-3">
               <h2 class="text-white text-3xl font-bold">16</h2>
@@ -122,11 +122,11 @@
               </svg>
             </div>
           </div>
-          <div class="h-28 rounded-lg bg-green-400 ">
+          <div class="h-24 rounded-lg bg-green-400 ">
             <p class="text-sm font-medium pt-2 pl-3 text-white">Closed</p>
             <div class="mt-8 ml-3 flex">
-              <h2 class="text-white text-3xl font-bold mr-8">36</h2>
-              <svg xmlns="http://www.w3.org/2000/svg" class="text-white opacity-20 h-12 w-12" viewBox="0 0 20 20"
+              <h2 class="text-white text-3xl font-bold ">36</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white opacity-20 h-10 w-10" viewBox="0 0 20 20"
                 fill="currentColor">
                 <path fill-rule="evenodd"
                   d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -136,8 +136,13 @@
             </div>
           </div>
         </div>
-        <p class="py-6 text-sm font-medium text-gray-500">Out-time competion Rate</p>
+        <div class="Task-summary-bottom">
+          <div>
+            <p class="py-6 text-sm font-medium text-gray-500">Out-time competion Rate</p>
         <span class="text-2xl font-extrabold">98%</span><span class="text-sm text-green-600">↗ 2.73%</span>
+          </div>
+          <img src="/img/linea.png" alt="">
+        </div>
       </section>
       <section class="properties p-6 shadow border-solid border-2 border-x-gray-400 rounded-lg">
         <div class="flex justify-between align-center pb-8">
@@ -191,6 +196,26 @@
         </div>
       </section>
     </div>
+  </div>
+  <div class="bottom-navbar bg-white text-gray-400 w-full h-20 flex justify-around items-center p-6 ">
+    <div class="bg-gradient-to-t from-white to-gray-300 p-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-700" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+        </svg>
+    </div>
+   
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
   </div>
 </body>
 
